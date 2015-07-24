@@ -1,0 +1,13 @@
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\bin\Debug\UkrLegistation.Desktop.exe.config
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\bin\Debug\UkrLegistation.Desktop.exe
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\bin\Debug\UkrLegistation.Desktop.pdb
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.csprojResolveAssemblyReference.cache
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\MainWindow.baml
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\MainWindow.g.cs
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\App.g.cs
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop_MarkupCompile.cache
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.g.resources
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.Properties.Resources.resources
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.csproj.GenerateResource.Cache
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.exe
+c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.pdb
