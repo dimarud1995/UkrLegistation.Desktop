@@ -4,33 +4,6 @@
         Title="MainWindow" Height="460.395" Width="723.684"
         Background="CadetBlue">
     <Window.Resources>
-        <Style TargetType="Button" x:Key="Button1">
-            <Setter Property="Background" Value="#9ab3cd" />
-            <Setter Property="TextBlock.TextAlignment" Value="Center" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border CornerRadius="7" Background="{TemplateBinding Background}" BorderBrush="#9ab3cd" BorderThickness="0,1,1,0" Margin="0,0,0,-9" >
-                            <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property = "Background" Value="#FF008074"/>
-                </Trigger>
-                <Trigger Property="IsMouseCaptured" Value="True">
-                    <Setter Property="Background" Value="Teal"></Setter>
-                </Trigger>
-                <Trigger Property="IsPressed" Value="true">
-                    <Setter Property = "Foreground" Value="DarkGreen"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-
-
-
         <Style x:Key="TextBox1" TargetType="TextBox">
             <Setter Property="SnapsToDevicePixels" Value="True"/>
             <Setter Property="OverridesDefaultStyle" Value="True"/>
