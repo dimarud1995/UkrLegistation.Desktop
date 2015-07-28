@@ -38,7 +38,7 @@
     </Window.Resources>
     <Grid Margin="0,0,-8,-4">
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Images/Authorization/Auth!.jpg">
+            <ImageBrush Stretch="Fill" ImageSource="Images/Authorization/Background.jpg">
             </ImageBrush>
         </Grid.Background>
         <Grid.ColumnDefinitions>
@@ -47,6 +47,7 @@
             <ColumnDefinition Width="429*"/>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="110*"/>
+            
         </Grid.ColumnDefinitions>
         <TextBox Style="{StaticResource TextBox1}" Name="LoginBox" FontSize="25" HorizontalAlignment="Left"  Height="40" Margin="37,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="277" Grid.Column="2" RenderTransformOrigin="0.502,0.5"/>
         <TextBox Style="{StaticResource TextBox1}" Name="PasswordBox" FontSize="25" HorizontalAlignment="Left" Height="40" Margin="37,230,115,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="277" Grid.Column="2" RenderTransformOrigin="0.505,0.7"/>
