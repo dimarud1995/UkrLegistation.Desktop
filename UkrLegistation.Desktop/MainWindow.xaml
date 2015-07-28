@@ -9,8 +9,8 @@
             <Setter Property="TextBlock.TextAlignment" Value="Center" />
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="7" Background="#9ab3cd"  BorderBrush="#9ab3cd" BorderThickness="0,1,1,0" Margin="0,0,0,-9" >
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="7" Background="{TemplateBinding Background}" BorderBrush="#9ab3cd" BorderThickness="0,1,1,0" Margin="0,0,0,-9" >
                             <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                         </Border>
                     </ControlTemplate>
@@ -18,7 +18,10 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property = "Background" Value="Green"/>
+                    <Setter Property = "Background" Value="#FF008074"/>
+                </Trigger>
+                <Trigger Property="IsMouseCaptured" Value="True">
+                    <Setter Property="Background" Value="Teal"></Setter>
                 </Trigger>
                 <Trigger Property="IsPressed" Value="true">
                     <Setter Property = "Foreground" Value="DarkGreen"/>
@@ -61,6 +64,10 @@
 
     </Window.Resources>
     <Grid Margin="0,0,-8,-4">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Images/Authorization/Auth!.jpg">
+            </ImageBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="185*"/>
             <ColumnDefinition Width="0*"/>
@@ -71,28 +78,30 @@
         <TextBox Style="{StaticResource TextBox1}" Name="LoginBox" FontSize="25" HorizontalAlignment="Left"  Height="40" Margin="37,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="277" Grid.Column="2" RenderTransformOrigin="0.502,0.5"/>
         <TextBox Style="{StaticResource TextBox1}" Name="PasswordBox" FontSize="25" HorizontalAlignment="Left" Height="40" Margin="37,230,115,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="277" Grid.Column="2" RenderTransformOrigin="0.505,0.7"/>
 
-        <Button  Content="Вхід" HorizontalAlignment="Left" Margin="121,301,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="-0.641,-0.13" Click="Button_Click" Grid.Column="1" Height="25" Grid.ColumnSpan="2"  >
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Border CornerRadius="7" Background="#9ab3cd"  BorderBrush="#9ab3cd" BorderThickness="0,1,1,0" Margin="0,0,0,-9" >
-                        <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-            
+        <Button Content="Вхід" HorizontalAlignment="Left" Margin="121,301,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="-0.641,-0.13" Click="Button_Click" Grid.Column="1" Height="25" Grid.ColumnSpan="2" Foreground="Black" Cursor="Arrow"  >
             <Button.Style>
-                <Style TargetType="Button">
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#9ab3cd"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="7">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
                     <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property = "Background" Value="Green"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF7D95AE"/>
                         </Trigger>
-                        <Trigger Property="IsPressed" Value="true">
-                            <Setter Property = "Foreground" Value="DarkGreen"/>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="LightBlue"></Setter>
                         </Trigger>
                     </Style.Triggers>
                 </Style>
             </Button.Style>
-        </Button>  
+        </Button>
         <Label Content="Логін" HorizontalAlignment="Left" Margin="155,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.273,0.118" Grid.Column="2" Height="26" Width="40"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="155,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.238" Grid.Column="2" Height="26" Width="51"/>
 
