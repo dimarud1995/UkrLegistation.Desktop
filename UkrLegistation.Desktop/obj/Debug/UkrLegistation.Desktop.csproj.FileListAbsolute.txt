@@ -11,3 +11,6 @@ c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\U
 c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.csproj.GenerateResource.Cache
 c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.exe
 c:\users\дима\documents\visual studio 2013\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.pdb
+D:\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\bin\Debug\UkrLegistation.Desktop.exe.config
+D:\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.exe
+D:\Projects\UkrLegistation.Desktop\UkrLegistation.Desktop\obj\Debug\UkrLegistation.Desktop.pdb
