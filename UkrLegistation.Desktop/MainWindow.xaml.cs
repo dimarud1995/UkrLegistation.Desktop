@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using UkrLegistation.Desktop.Json;
+using UkrLegistation.Desktop.Model;
 
 
 namespace UkrLegistation.Desktop
@@ -18,9 +20,16 @@ namespace UkrLegistation.Desktop
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (LoginBox.Text == "admin" && PasswordBox.Text == "admin")
+            User user = new User();
+            UserJson.GetData(out user);
+
+            if (LoginBox.Text == user.login && PasswordBox.Text == user.password && user.role == "admin")
             {
-                MessageBox.Show("Authorization successful!");
+                MessageBox.Show("Hello admin :)");
+            }
+           else
+            {
+                MessageBox.Show("Bye user :(");
             }
         }
 
