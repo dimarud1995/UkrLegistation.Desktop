@@ -25,13 +25,16 @@ namespace UkrLegistation.Desktop
             {
                 if (LoginBox.Text == user.login && PasswordBox.Text == user.password && user.role == "admin")
                 {
-                    MessageBox.Show("Hello admin :)");
+                    AdminWindow admin = new AdminWindow();
+                    admin.Show();
+                    this.Close();
                     break;
                 }
                 else
                 {
                     if (flag) break;
-                    MessageBox.Show("Bye user :(");
+                    ErrorAuthorization authErr = new ErrorAuthorization();
+                    authErr.Show();
                     break;
                 }
             }            
