@@ -1,0 +1,12 @@
+﻿<Window x:Class="UkrLegistation.Desktop.ErrorAuthorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ErrorAuthorization" Height="300" Width="300">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Images/Authorization/Background.jpg"></ImageBrush>
+        </Grid.Background>
+        <Label Content="Sorry, but administator with such data isn't find :(" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.046,0.538"/>
+
+    </Grid>
+</Window>
