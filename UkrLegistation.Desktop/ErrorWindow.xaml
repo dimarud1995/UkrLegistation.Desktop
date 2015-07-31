@@ -1,0 +1,12 @@
+﻿<Window x:Class="UkrLegistation.Desktop.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Error" Height="300" Width="300">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Images/Authorization/Background.jpg"/>
+        </Grid.Background>
+        <Label Content="Your connection was lost :(" HorizontalAlignment="Left" Margin="77,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.783,-0.356"/>
+
+    </Grid>
+</Window>
