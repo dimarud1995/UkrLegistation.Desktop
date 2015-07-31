@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using UkrLegistation.Desktop.Json;
 using UkrLegistation.Desktop.Model;
 
@@ -12,26 +13,28 @@ namespace UkrLegistation.Desktop
     {
         public MainWindow()
         {
-            
             InitializeComponent();
-           
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User();
-            UserJson.GetData(out user);
-
-            if (LoginBox.Text == user.login && PasswordBox.Text == user.password && user.role == "admin")
+            List<User> users = new List<User>();
+            bool flag;
+            UserJson.GetData(out users, out flag);
+            foreach (var user in users)
             {
-                MessageBox.Show("Hello admin :)");
-            }
-           else
-            {
-                MessageBox.Show("Bye user :(");
-            }
+                if (LoginBox.Text == user.login && PasswordBox.Text == user.password && user.role == "admin")
+                {
+                    MessageBox.Show("Hello admin :)");
+                    break;
+                }
+                else
+                {
+                    if (flag) break;
+                    MessageBox.Show("Bye user :(");
+                    break;
+                }
+            }            
         }
-
     }
 }
